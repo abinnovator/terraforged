@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "terraforged:baobab_plank"
+  },
+  "result": {
+    "id": "minecraft:crafting_table",
+    "count": 1
+  }
+
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "terraforged:block/baobab_log_top",
+    "side": "terraforged:block/baobab_log"
+  }
+}

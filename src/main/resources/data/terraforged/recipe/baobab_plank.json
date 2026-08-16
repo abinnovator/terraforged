@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "terraforged:baobab_log"
+  ],
+  "result": {
+    "id": "terraforged:baobab_plank",
+    "count": 4
+  }
+}
