@@ -1,5 +1,7 @@
 {
   "block.terraforged.baobab_log": "Baobab Log",
   "block.terraforged.baobab_plank": "Baobab Plank",
-  "block.terraforged.baobab_door": "Baobab Door"
+  "block.terraforged.baobab_door": "Baobab Door",
+  "block.terraforged.baobab_button": "Baobab Button",
+  "block.terraforged.baobab_trapdoor": "Baobab Trapdoor"
 }

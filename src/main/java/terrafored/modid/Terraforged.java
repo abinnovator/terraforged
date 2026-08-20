@@ -2,8 +2,13 @@ package terrafored.modid;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.resources.Identifier;
 
+import net.minecraft.tags.BiomeTags;
+import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.levelgen.GenerationStep;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,7 +27,16 @@ public class Terraforged implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModWoodTypes.initialize();
 		ModBlocks.initialize();
+		ModFeatures.initialize();
+		BiomeModifications.addFeature(
+				BiomeSelectors.includeByKey(Biomes.SAVANNA, Biomes.SAVANNA_PLATEAU, Biomes.WINDSWEPT_SAVANNA),
+				GenerationStep.Decoration.VEGETAL_DECORATION,
+				TerraforgedWorldPlacementFeatures.BAOBAB_TREE_KEY
+		);
+		TerraforgedEntityTypes.registerModEntityTypes();
+		TerraforgedEntityTypes.registerAttributes();
 	}
 
 	public static Identifier id(String path) {

@@ -22,7 +22,7 @@
 			"terrafored.modid.client.TerraforgedClient"
 		],
 		"fabric-datagen": [
-			"terrafored.modid.client.TerraforgedDataGenerator"
+			"terrafored.modid.client.datagen.TerraforgedDataGenerator"
 		]
 	},
 	"mixins": [

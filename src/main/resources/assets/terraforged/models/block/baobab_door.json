@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "terraforged:item/baobab_door"
+    "layer0": "terraforged:block/baobab_door"
   }
 }
