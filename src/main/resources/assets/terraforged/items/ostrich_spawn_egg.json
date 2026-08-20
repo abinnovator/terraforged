@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "terraforged:block/baobab_leaves"
+    "model": "terraforged:item/ostrich_spawn_egg"
   }
 }

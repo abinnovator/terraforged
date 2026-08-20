@@ -3,5 +3,7 @@
   "block.terraforged.baobab_plank": "Baobab Plank",
   "block.terraforged.baobab_door": "Baobab Door",
   "block.terraforged.baobab_button": "Baobab Button",
-  "block.terraforged.baobab_trapdoor": "Baobab Trapdoor"
+  "block.terraforged.baobab_trapdoor": "Baobab Trapdoor",
+  "block.terraforged.baobab_leaves": "Baobab Leaves",
+  "item.terraforged.ostrich_spawn_egg": "Ostrich Spawn Egg"
 }

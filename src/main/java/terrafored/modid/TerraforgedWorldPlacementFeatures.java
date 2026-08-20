@@ -28,7 +28,7 @@ public class TerraforgedWorldPlacementFeatures {
                 new PlacedFeature(
                         configuredFeatures.getOrThrow(TerraforgedWorldConfiguredFeatures.BAOBAB_TREE_CONFIGURED_KEY),
                         List.of(
-                                RarityFilter.onAverageOnceEvery(5),
+                                RarityFilter.onAverageOnceEvery(50),
                                 InSquarePlacement.spread(),
                                 PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                                 BiomeFilter.biome()

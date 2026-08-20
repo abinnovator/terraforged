@@ -1,10 +1,14 @@
-# terraforged
+# Terraforged: The Better Way To Play Vanilla
 
-## Setup
+Terraforged is an immersive Minecraft mod that adds a variety of features that enhance the base game.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+The goal is to make the world more fun to explore while keeping the vanilla feel.
 
-## License
+## V1 Features
+The features added the in the V1 Are:
+- The baobab wood set - includes the baobab plank, log, leaves, button, trapdoor and door
+- The ostrich mob - The ostrich mob is a passive mob that can be summoned with /summon terraforged:ostrich. It can be attracted with an apple.
+- The baobab tree - The baobab tree is a new tree that can be found in the savanna biome. It has a unique shape and can be harvested for baobab wood.
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
-# terraforged
+## How to use
+To use Terraforged, simple download the mod and place it in your Minecraft mods folder. Make sure you have the correct version of Minecraft and any required dependencies installed.

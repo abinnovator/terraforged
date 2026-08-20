@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.resources.Identifier;
 
-import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import org.slf4j.Logger;
@@ -30,6 +29,7 @@ public class Terraforged implements ModInitializer {
 		ModWoodTypes.initialize();
 		ModBlocks.initialize();
 		ModFeatures.initialize();
+		ModItems.initialize();
 		BiomeModifications.addFeature(
 				BiomeSelectors.includeByKey(Biomes.SAVANNA, Biomes.SAVANNA_PLATEAU, Biomes.WINDSWEPT_SAVANNA),
 				GenerationStep.Decoration.VEGETAL_DECORATION,

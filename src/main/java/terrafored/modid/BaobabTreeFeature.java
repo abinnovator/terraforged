@@ -2,9 +2,11 @@ package terrafored.modid;
 
 import com.mojang.serialization.Codec;
 import net.minecraft.resources.Identifier;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Rotation;
+import net.minecraft.core.Direction;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
@@ -25,7 +27,14 @@ public class BaobabTreeFeature extends Feature<NoneFeatureConfiguration> {
         // This is where you would define how the tree is generated, including trunk and foliage placement
         // Get the world generation level from the context
         WorldGenLevel world = context.level();
-        // Get All the nbt files by going to the structure manager and getting the structure template for the baobab tree
+        BlockPos origin = context.origin();
+        BlockPos ground = origin.below();
+        if (!world.getFluidState(origin).isEmpty()
+                || !world.getBlockState(ground).isFaceSturdy(world, ground, Direction.UP)) {
+            return false;
+        }
+
+        // Get All the NBT files by going to the structure manager and getting the structure template for the baobab tree
         StructureTemplateManager templateManager = world.getLevel().getServer().getStructureManager();
 
         // THis gets my nbt file from the templateManager
@@ -37,7 +46,6 @@ public class BaobabTreeFeature extends Feature<NoneFeatureConfiguration> {
         // Tells the structure manager how to place the structure in the world
         StructurePlaceSettings settings = new StructurePlaceSettings().setRotation(rotation);
         //Place it in the world
-        baobabTreeTemplate.get().placeInWorld(world, context.origin(),context.origin(), settings, context.random(), Block.UPDATE_CLIENTS);
-        return true; // Return true if the tree was successfully placed
+        return baobabTreeTemplate.get().placeInWorld(world, origin, origin, settings, context.random(), Block.UPDATE_CLIENTS);
     }
 }
