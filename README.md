@@ -7,7 +7,7 @@ The goal is to make the world more fun to explore while keeping the vanilla feel
 ## V1 Features
 The features added the in the V1 Are:
 - The baobab wood set - includes the baobab plank, log, leaves, button, trapdoor and door
-- The ostrich mob - The ostrich mob is a passive mob that can be summoned with /summon terraforged:ostrich. It can be attracted with an apple.
+- The ostrich mob - The ostrich mob is a passive mob that can be summoned with /summon terraforged:ostrich. It can be attracted with an apple. It can also be spawned with its spawn egg.
 - The baobab tree - The baobab tree is a new tree that can be found in the savanna biome. It has a unique shape and can be harvested for baobab wood.
 
 ## How to use
