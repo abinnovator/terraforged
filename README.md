@@ -12,3 +12,8 @@ The features added the in the V1 Are:
 
 ## How to use
 To use Terraforged, simple download the mod and place it in your Minecraft mods folder. Make sure you have the correct version of Minecraft and any required dependencies installed.
+
+## Demo
+[[![Watch the video]([https://youtube.com)](https://youtu.be/0uhrfAiTUTo)]
+](https://youtube.com)
+
